@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Kodland - Flex</title>
+   
+    <link rel="stylesheet" href="style.css">
+<style>
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+#main {
+  display: flex;
+  flex: 1;
+  min-height: 60vh;
+}
+#main > article {
+  flex: 1;
+}
+#main > nav, 
+#main > aside {
+  flex: 0 0 20vw;
+  background: lightblue;
+}
+#main > nav {
+  order: -1;
+}
+header, footer {
+  background: yellowgreen;
+  height: 20vh;
+  
+}
+header, footer, article, nav, aside {
+  padding: 1em;
+  
+}
+
+</style>
+
+</head>
+<body>
+  <header>
+    <logo>
+      <img src="logo.svg" width="200px"> - FLEX
+    </logo>
+      <div class="carousel">
+        <div class="carousel__scene">
+          <ol class="carousel__list">
+            <li class="carousel__cell"><a href="grids.html">GRIDS</a></li>
+            <li class="carousel__cell"><a href="flex.html">FLEX</a></li>
+            <li class="carousel__cell"><a href="grids.html">GRIDS</a></li>
+            <li class="carousel__cell"><a href="flex.html">FLEX</a></li>
+            <li class="carousel__cell"><a href="grids.html">GRIDS</a></li>
+            <li class="carousel__cell"><a href="flex.html">FLEX</a></li>
+            <li class="carousel__cell"><a href="grids.html">GRIDS</a></li>
+            <li class="carousel__cell"><a href="flex.html">FLEX</a></li>
+          </ol>
+        <div class="carousel__controls">
+          <button class="previous-button">&#x1F446;&#x1F3FB;</button>
+          <button class="next-button">&#x1F447;&#x1F3FB;</button>
+        </div>
+      </div>
+    </mainMenu>
+  </header>
+  <div id="main">
+    <article>
+      Article
+    </article>
+    <nav>
+      Nav
+    </nav>
+    <aside>
+      Aside
+    </aside>
+  </div>
+  <footer>
+    Footer
+  </footer>
+  <script src="scripts.js"></script>
+ </body></html>
